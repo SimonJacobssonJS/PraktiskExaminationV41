@@ -1,26 +1,38 @@
 body {
     font-family: "Oswald", sans-serif;
-    padding: 0;
     background-color: lightblue;
+    padding: 0;
+    margin: 0;
 }
 
 .headerimg {
     display: grid;
-    grid-row: 1fr;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #000 solid;
+    margin: 1rem;
 }
 
 nav ul{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     list-style-type:none;
-    justify-content: space-between;
-    border: solid black;
+    justify-content: space-around;
     padding: 1rem;
-    font-size: clamp(1rem 2rem 3rem);  /*Clamp för att automatisk justera font size beroende på skärmstorlek*/
-    margin: 1% 1rem 0 1rem;
+    font-size: 2rem; /* clamp(2rem 3rem 4rem);  /*Clamp för att automatisk justera font size beroende på skärmstorlek*/
+    margin: .5rem;
 }
 
 a{
@@ -36,4 +48,30 @@ a:hover{
     background-color: hsl(0, 0%, 90%); /* lägger till opacity, 100% är osynlig */
 }
 
+/*v------------------------------Media querys----------------------------------v*/
 
+@media (max-width: 320px) {
+    nav ul{
+       font-size: 3.8vw;
+       margin: 0;
+       padding: 0;
+   }
+   li{
+       padding: 0;
+       margin: 0;
+   }
+
+}
+
+@media (max-width: 600px) {
+     nav ul{
+        font-size: 4vw;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        padding: 0;
+        margin: 0;
+    }
+
+}
