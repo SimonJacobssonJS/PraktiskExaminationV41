@@ -5,24 +5,30 @@ body {
 }
 
 .headerimg {
-    display: flex;
+    display: grid;
+    grid-row: 1fr;
     align-items: center;
     justify-content: center;
 }
 
 nav ul{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     list-style-type:none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: solid black;
     padding: 1rem;
+    font-size: clamp(1rem 2rem 3rem);  /*Clamp för att automatisk justera font size beroende på skärmstorlek*/
+    margin: 1% 1rem 0 1rem;
 }
 
 a{
-    border: solid black 2px;
-    padding: 1rem 3rem 1rem;
+    padding: 1rem;
     text-decoration: none;
+    color: rgb(226, 226, 0);
+    -webkit-text-stroke: .5px #000;
+    text-shadow: 2px 2px 2px #000;
 }
 
 a:hover{
