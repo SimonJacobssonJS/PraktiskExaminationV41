@@ -1,13 +1,33 @@
 body {
     font-family: "Oswald", sans-serif;
     padding: 0;
+    background-color: lightblue;
 }
 
-nav ul li{
+.headerimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
     list-style-type:none;
+    justify-content: space-evenly;
+    border: solid black;
+    padding: 1rem;
 }
 
 a{
+    border: solid black 2px;
+    padding: 1rem 3rem 1rem;
     text-decoration: none;
 }
+
+a:hover{
+    font-weight: bold;
+    background-color: hsl(0, 0%, 90%); /* lägger till opacity, 100% är osynlig */
+}
+
 
