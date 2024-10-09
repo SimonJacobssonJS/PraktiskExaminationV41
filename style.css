@@ -1,6 +1,6 @@
 body {
     font-family: "Oswald", sans-serif;
-    background-color: rgb(166, 168, 143);
+    background-color: rgb(233, 226, 163);
     padding: 0;
     margin: 0;
     display: grid;
@@ -42,7 +42,7 @@ img {
     width: 100%;
     margin: 1rem + 10rem 1rem -10rem;
     font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
-    margin-bottom: .5rem;
+    margin-top: 1rem;
 }
 
 nav ul{

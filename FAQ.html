@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="FAQ.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> <!-- Link till Font "Oswald" genom google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>KryptoButiken</title>
-    
 </head>
 <body>
 <header>
@@ -16,61 +15,63 @@
 </header>
 <main>
     <section class="navbar">
-    <nav>
+        <nav>
             <ul>
-                <li><a aria-label="Knapp med länk till startsidan" href="index.html" link="#">Startsida</a></li>
-                <li><a aria-label="Knapp med länk till frågor och svar sida" href="FAQ" link="#">FAQ</a></li>
-                <li><a aria-label="Knapp med länk till produktsida" href="products.html" link="#">Produkter</a></li>
-                <li><a aria-label="Knapp med länk till kontaktsida" href="kontakt" link="#">Kontakt</a></li>
+                <li><a aria-label="Knapp med länk till startsidan" href="index.html">Startsida</a></li>
+                <li><a aria-label="Knapp med länk till frågor och svar sida" href="FAQ.html">FAQ</a></li>
+                <li><a aria-label="Knapp med länk till produktsida" href="products.html">Produkter</a></li>
+                <li><a aria-label="Knapp med länk till kontaktsida" href="kontakt">Kontakt</a></li>
             </ul>
-    </nav>
+        </nav>
+    </section>
+
     <article>
-    <div class="faq-container">
-        <h1>FAQ - Kryptovaluta</h1>
-        <div class="faq-item">
-            <input type="checkbox" id="q1">
-            <label for="q1" class="faq-question">Vad är kryptovaluta?</label>
-            <div class="faq-answer">
-                <p>Kryptovaluta är en digital eller virtuell valuta som använder kryptografi för säkerhet. De flesta kryptovalutor fungerar på en decentraliserad teknik som kallas blockchain.</p>
+        <div class="faq-container">
+            <h1>FAQ - Kryptovaluta</h1>
+            <div class="faq-item">
+                <input type="checkbox" id="q1">
+                <label for="q1" class="faq-question">Vad är kryptovaluta?</label>
+                <div class="faq-answer">
+                    <p>Kryptovaluta är en digital eller virtuell valuta som använder kryptografi för säkerhet. De flesta kryptovalutor fungerar på en decentraliserad teknik som kallas blockchain.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="q2">
+                <label for="q2" class="faq-question">Hur fungerar en blockchain?</label>
+                <div class="faq-answer">
+                    <p>En blockchain är en distribuerad databas där transaktioner registreras i block och länkas ihop med hjälp av kryptografi, vilket gör systemet transparent och säkert.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="q3">
+                <label for="q3" class="faq-question">Är kryptovalutor lagliga?</label>
+                <div class="faq-answer">
+                    <p>Lagligheten varierar från land till land. I många länder är kryptovalutor lagliga, men vissa har infört restriktioner eller totalförbud mot användning av dem.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="q4">
+                <label for="q4" class="faq-question">Vad är Bitcoin?</label>
+                <div class="faq-answer">
+                    <p>Bitcoin är den första och mest kända kryptovalutan som skapades av en anonym person eller grupp känd som Satoshi Nakamoto. Det är en decentraliserad digital valuta utan centralbank.</p>
+                </div>
             </div>
         </div>
-        <div class="faq-item">
-            <input type="checkbox" id="q2">
-            <label for="q2" class="faq-question">Hur fungerar en blockchain?</label>
-            <div class="faq-answer">
-                <p>En blockchain är en distribuerad databas där transaktioner registreras i block och länkas ihop med hjälp av kryptografi, vilket gör systemet transparent och säkert.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <input type="checkbox" id="q3">
-            <label for="q3" class="faq-question">Är kryptovalutor lagliga?</label>
-            <div class="faq-answer">
-                <p>Lagligheten varierar från land till land. I många länder är kryptovalutor lagliga, men vissa har infört restriktioner eller totalförbud mot användning av dem.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <input type="checkbox" id="q4">
-            <label for="q4" class="faq-question">Vad är Bitcoin?</label>
-            <div class="faq-answer">
-                <p>Bitcoin är den första och mest kända kryptovalutan som skapades av en anonym person eller grupp känd som Satoshi Nakamoto. Det är en decentraliserad digital valuta utan centralbank.</p>
-            </div>
-        </div>
-    </div>
-</article>
-<div>
-    <footer>
-        <div class="mailnumber">
+    </article>
+</main>
+
+<footer>
+    <div class="mailnumber">
         <p id="pfooter">Email: <a id="afooter" aria-labelledby="Mail till företaget" href="mailto:example@example.com">Notascam@psych.com</a></p>
-        <p>Telefon: <a  id="afooter" aria-labelledby="Telefonnummer till företaget" href="tel:+46123456789">+46 12 345 67 89</a></p>
-        </div>
-        <div class="Socialmedia">
-            <ul>
-                <li><a  id="afooter" aria-label="Knapp med länk till facebook" href="https://www.facebook.com">Facebook</a></li>
-                <li><a  id="afooter" aria-label="Knapp med länk till youtube" href="https://www.youtube.com">Youtube</a></li>
-                <li><a  id="afooter" aria-label="Knapp med länk till instagram" href="https://www.instagram.com">Instagram</a></li>
-            </ul>
-        </div>
-    </footer>
+        <p>Telefon: <a id="afooter" aria-labelledby="Telefonnummer till företaget" href="tel:+46123456789">+46 12 345 67 89</a></p>
     </div>
+    <div class="Socialmedia">
+        <ul>
+            <li><a id="afooter" aria-label="Knapp med länk till facebook" href="https://www.facebook.com">Facebook</a></li>
+            <li><a id="afooter" aria-label="Knapp med länk till youtube" href="https://www.youtube.com">Youtube</a></li>
+            <li><a id="afooter" aria-label="Knapp med länk till instagram" href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
