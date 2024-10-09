@@ -36,6 +36,7 @@ img {
 article{
     display: grid;
     grid-template-columns: 1fr;
+    /*border: black solid; funkar ej :( */
 }
 
 #pagreement{
@@ -83,7 +84,7 @@ nav ul{
 }
 
 
-a{
+.Aheader{
     padding: 4vw;
     text-decoration: none;
     color: rgb(158, 64, 47);
@@ -91,11 +92,12 @@ a{
     text-shadow: 2px 2px 2px #000;  /* outline på texten*/
 }
 
-a:hover{
+a:hover, .Aheader:hover{
     font-weight: bold;
 }
 
 
+/* bild och kommentar med 5 stjärnor */
 .ratings{
     display: grid;
     width: 200px;
@@ -105,7 +107,7 @@ a:hover{
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(243, 207, 140);
+    background-color: rgb(134, 88, 3);
     padding: 1rem;
     font-size: clamp(.5rem, 1vw + .5rem, 1.5rem);
     width: 100%;
@@ -118,6 +120,9 @@ footer{
     font-size: 18px;
 }
 
+#pfooter{
+    color: white;
+}
 
 /*v-----------------------Media querys-----------------------v*/
 
@@ -171,9 +176,16 @@ footer{
 }
 
 @media (min-width: 1200px) and (max-width: 2000px){
+    .navbar{
+        font-size: 1.2rem;
+    }
+    a{
+        padding: 2vw;
+       
+    }
     article{
-        grid-template-columns: 400px 400px 200px 200px;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         margin: 1rem 0 0 1rem;
         border: none;
     }
