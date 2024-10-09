@@ -92,9 +92,14 @@ footer{
     font-size: clamp(.5rem, 1vw + .5rem, 1.5rem);
 }
 
-footer, .push{
-    height: 130px;
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rebeccapurple;
+    padding: 1rem;
+    font-size: clamp(.5rem, 1vw + .5rem, 1.5rem);
 }
+
 
 /*v-----------------------Media querys-----------------------v*/
 
@@ -118,3 +123,9 @@ footer, .push{
     }
 }
 
+@media (min-width: 751px) and (max-width: 1200px){
+    article{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
