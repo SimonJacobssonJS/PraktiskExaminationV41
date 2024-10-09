@@ -123,8 +123,8 @@ footer{
     }
     .bitconnect{
         display: grid;
-        grid-column: 2 / 3;
-        grid-row:  1 / 1;
+        grid-column: 2 / -3;
+        grid-row:  3 / -2;
     }
 
 }
