@@ -33,6 +33,10 @@ img {
 
 /*-----------------------------------------------------Navbar----------------------------------------- */
 
+section.navbar{
+    margin-top: 0;
+}
+
 .navbar{
     display: flex;
     justify-content: space-evenly;
